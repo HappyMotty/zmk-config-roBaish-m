@@ -33,22 +33,22 @@
         };
 
         win {
-            bindings = <&none>;
+            bindings = <&kp LWIN>;
             key-positions = <38 37>;
         };
 
         Lalt {
-            bindings = <&none>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <38 39>;
         };
 
         Ralt {
-            bindings = <&none>;
+            bindings = <&kp RIGHT_ALT>;
             key-positions = <40 41>;
         };
 
         tab {
-            bindings = <&none>;
+            bindings = <&kp TAB>;
             key-positions = <21 9>;
         };
     };
@@ -78,10 +78,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                      &kp T                                                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &lt 3 F                    &kp G                   &kp F20                             &kp RA(SINGLE_QUOTE)  &kp H        &kp J  &kp K      &kp L    &mt RCTRL SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B                   &kp F20                             &lt 6 F5              &kp N        &kp M  &kp COMMA  &kp DOT  &mt LS(RIGHT_SHIFT) LS(DELETE)
-&mkp MB3          &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL INTERNATIONAL_4  &mt LS(LEFT_WIN) SPACE  &mt LC(LEFT_WIN) INTERNATIONAL_5    &lt 2 BACKSPACE       &lt 1 ENTER                             &lt 5 SLASH
+&kp Q             &kp W         &kp E         &kp R                &kp T                                                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &lt 3 F              &kp G                   &kp F20                             &kp RA(SINGLE_QUOTE)  &kp H        &kp J  &kp K      &kp L    &mt RCTRL SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                &kp B                   &kp F20                             &lt 6 F5              &kp N        &kp M  &kp COMMA  &kp DOT  &mt LS(RIGHT_SHIFT) LS(DELETE)
+&mkp MB3          &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LA(GRAVE)  &mt LS(LEFT_WIN) SPACE  &mt LC(LEFT_WIN) INTERNATIONAL_5    &lt 2 BACKSPACE       &lt 1 ENTER                             &lt 5 SLASH
             >;
         };
 
@@ -89,7 +89,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)    &kp LS(N9)        &kp LS(N0)
 &trans            &trans            &trans            &trans            &trans      &trans    &trans  &kp LEFT          &kp DOWN    &kp UP_ARROW  &kp RIGHT         &kp NON_US_BACKSLASH
-&trans            &trans            &trans            &trans            &trans      &trans    &trans  &kp LC(X)         &kp LC(C)   &kp LC(V)     &kp LEFT_BRACKET  &mt RIGHT_SHIFT LS(RIGHT_BRACKET)
+&trans            &trans            &trans            &trans            &trans      &trans    &trans  &kp LC(C)         &kp LC(V)   &kp GRAVE     &kp LEFT_BRACKET  &mt RIGHT_SHIFT LS(RIGHT_BRACKET)
 &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans                                                        &kp SQT
             >;
         };
